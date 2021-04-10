@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greeting_text"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="15dp"
+        android:text="Lets Start The Quiz!!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ask_name_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_quiz"
+        android:layout_width="192dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="260dp"
+        android:background="@color/white"
+        android:onClick="start_quiz"
+        android:text="Start Quiz"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_name" />
+
+    <TextView
+        android:id="@+id/ask_name_text"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="133dp"
+        android:text="Please enter your name:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_quiz"
+        app:layout_constraintEnd_toStartOf="@+id/enter_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_text" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="121dp"
+        android:text="Please enter your name:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ask_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
